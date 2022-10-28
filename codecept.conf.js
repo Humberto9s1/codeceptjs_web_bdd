@@ -8,7 +8,9 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    "I": "./steps_file.js",
+    "LoginPage": "./pages/login_page.js",
+    "SignupPage": "./pages/signup_page.js"
   },
   mocha: {},
   bootstrap: null,
