@@ -1,13 +1,7 @@
-const { I } = inject();
+const { I, SignupPage } = inject();
 
 Given('Eu realizei o cadastro do usuário no sistema com email {string} e senha {string}', (email, senha) => {
-    I.amOnPage('/signup');
-    I.waitForElement('#email');
-    I.fillField('#email', email);
-    I.fillField('#email_confirm', email);
-    I.fillField('#senha', senha);
-    I.click('#cadastrar');
-    I.waitForText('LOGIN');
+    SignupPage.createUser(email, senha);
 });
 
 When('Eu preencha o email {string} e senha {string}', (email, senha) => {
