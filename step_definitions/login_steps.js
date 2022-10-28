@@ -1,4 +1,4 @@
-const { I, SignupPage } = inject();
+const { I, SignupPage, LoginPage } = inject();
 
 Given('Eu realizei o cadastro do usuário no sistema com email {string} e senha {string}', (email, senha) => {
     SignupPage.createUser(email, senha);
@@ -6,13 +6,13 @@ Given('Eu realizei o cadastro do usuário no sistema com email {string} e senha 
 
 When('Eu preencha o email {string} e senha {string}', (email, senha) => {
     I.amOnPage('/');
-    I.waitForElement('#email');
-    I.fillField('#email', email);
-    I.fillField('#senha', senha);
+    I.waitForElement(LoginPage.fields.email);
+    I.fillField(LoginPage.fields.email, email);
+    I.fillField(LoginPage.fields.password, senha);
 });
 
 When('Eu clicar no botão Entrar', () => {
-    I.click('#entrar');
+    I.click(LoginPage.buttons.signIn);
 });
 
 Then('Eu vejo a tela {string} com a mensagem {string}', (tela, msg) => {

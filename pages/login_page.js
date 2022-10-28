@@ -1,6 +1,15 @@
 const { I } = inject();
 
 module.exports = {
+  baseUrl: '/',
 
-  // insert your locators and methods here
+  //localizador (locator)
+  fields: {
+    email: '#email',
+    password: '#senha'
+  },
+
+  buttons: {
+    signIn: '#entrar'
+  }
 }
