@@ -6,7 +6,7 @@
 
 ## Youtube
 
-- [Teste automatizado com Codeceptjs (WebDriver)](https://www.youtube.com/watch?v=cT6GBx4x9rQ) - Project video
+- [Teste automatizado com Codeceptjs (WebDriver)](https://www.youtube.com/watch?v=_0Hnfaek_jY) - Project video
 ## Installation
 Install the dependencies and devDependencies and start the server
 
